@@ -22,19 +22,11 @@
 </template>
 
 <script>
-import { Plugins } from '@capacitor/core';
-
 export default {
   name: 'Home',
   methods: {
     goToAbout() {
       this.$router.push('about');
-    },
-    async showDialogAlert() {
-      await Plugins.Modals.alert({
-        title: 'Alert',
-        message: 'This is an example alert box',
-      });
     },
   },
 };

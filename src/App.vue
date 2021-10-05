@@ -1,28 +1,37 @@
 <template>
-  <ion-app>
-    <router-view></router-view>
-  </ion-app>
+  <v-app>
+    <!-- Layout component -->
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<style scoped>
+/**
+ * Transition animation between pages
+ */
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease;
 }
 
-#nav {
-  padding: 30px;
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+/* 
+@font-face {
+  font-family: "GintoNordMedium";
+  src: local("GintoNordMedium"),
+    url("./assets/fonts/GintoNord/ABCGintoNord-Medium.woff") format("truetype");
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+@font-face {
+  font-family: "GintoNordRegular";
+  src: local("GintoNordRegular"),
+    url("./assets/fonts/GintoNord/ABCGintoNord-Regular.woff") format("truetype");
+} */
 </style>

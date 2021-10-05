@@ -1,6 +1,0 @@
-{
-	"appId": "com.feelings.app",
-	"appName": "FeeleingApp",
-	"webDir": "dist",
-	"bundledWebRuntime": false
-}
