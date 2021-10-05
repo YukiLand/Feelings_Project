@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color : #CBECF1">
     <!-- Layout component -->
     <transition name="fade" mode="out-in">
       <router-view />
@@ -8,9 +8,13 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 /**
  * Transition animation between pages
  */
+ .appBg {
+   background-color : red;
+ }
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.2s;
