@@ -1,15 +1,15 @@
 <template>
-    <div>
-        <span> bite</span>
-    </div>
+  <div>
+    <HomeHeader/>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    components: {
+        HomeHeader: () => import("@/components/home/HomeHeader"),
+    },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
