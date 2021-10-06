@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app style="background-color:#CBECF1">
     <!-- Layout component -->
     <transition name="fade" mode="out-in">
       <router-view />
@@ -8,6 +8,9 @@
 </template>
 
 <style scoped>
+.bg {
+  background-color: blue;
+}
 /**
  * Transition animation between pages
  */

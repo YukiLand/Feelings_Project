@@ -9,6 +9,11 @@ const routes = [
     name: 'HomePage',
     component: () => import('@/pages/HomePage.vue'),
   },
+  {
+    path: '/auth',
+    name: 'AuthPage',
+    component: () => import('@/pages/AuthPage.vue'),
+  },
 ];
 
 const router = new VueRouter({
