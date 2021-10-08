@@ -8,13 +8,16 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@font-face {
+  font-family: 'Garamond';
+  src: local('Garamond'), url('./assets/Garamond.ttf') format('truetype');
+}
 /**
  * Transition animation between pages
  */
- .appBg {
-   background-color : red;
- }
+.appBg {
+  background-color: red;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition-duration: 0.2s;
@@ -26,7 +29,7 @@
 .fade-leave-active {
   opacity: 0;
 }
-/* 
+/*
 @font-face {
   font-family: "GintoNordMedium";
   src: local("GintoNordMedium"),

@@ -1,36 +1,45 @@
 <template>
-    <div class="biggest">
-        <v-row justify="center" class="pa-15 mt-15">
-            <h3>Feelings</h3>
-        </v-row>
-          <div>
-            <v-container class="grey lighten-5">
-                <v-row
-                    no-gutters
-                    style="height: 350px;width: 350px"
-                >
-                    <v-col>
-                        <v-img src="@/assets/PHOTO-2021-10-05-16-41-03.jpg" max-width="800px" style="height: 350px;width: 350px"></v-img>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </div>
+  <div class="biggest">
+    <v-row justify="center" class="pa-15">
+      <h3 style="font-family:'Garamond'">Feelings</h3>
+    </v-row>
+    <div>
+      <v-row justify="center">
+        <v-img
+          src="@/assets/blueBGSmiley.jpg"
+          max-width="800px"
+          @click="go_to_auth()"
+          style="height: 350px;width: 350px; cursor:pointer"
+        ></v-img>
+      </v-row>
     </div>
+    <v-row justify="center" class="pa-2 mt-2">
+      <span
+        style="font-size:24px; font-weight:600; font-family:'Garamond'"
+        class="white--text"
+        >A l'écoute de vos sentiments</span
+      >
+    </v-row>
+  </div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  methods: {
+    go_to_auth() {
+      this.$router.push('auth');
+    },
+  },
+};
 </script>
 
 <style scoped>
 .biggest {
-    background-color : #CBECF1;
+  background-color: #cbecf1;
 }
 h3 {
-    font-family: 'EB Garamond', serif;
-    color : #DCC63C;
-    font-size : 70px;
+  font-family: 'EB Garamond', serif;
+  color: #dcc63c;
+  font-size: 70px;
 }
 </style>
