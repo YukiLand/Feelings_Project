@@ -1,7 +1,9 @@
 <template>
   <div height="90vh">
     <v-row justify="center" class="pa-2 my-5" style="background-color:#98cbcf">
-      <span style="font-weight:500; font-size:24px; font-family:'Garamond'" class="white--text"
+      <span
+        style="font-weight:500; font-size:24px; font-family:'Garamond'"
+        class="white--text"
         >Ton humeur du jour</span
       >
     </v-row>
@@ -47,7 +49,7 @@
           @click="go_to_bad_detail('triste')"
         ></v-img>
         <v-img
-          v-if="screenSize > 590"
+          v-if="$vuetify.breakpoint.name != 'xs'"
           src="@/assets/bonhomme.jpg"
           contain
           max-width="300"
